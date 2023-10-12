@@ -1,0 +1,1452 @@
+/*variables-------------*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 00;
+}
+
+/* -----------------------HEADER--------------*/
+header {
+  background-color: #e3e3e3;
+}
+
+header img {
+  height: 150px;
+}
+
+header .menu-de-todos {
+  background-image: linear-gradient(to top, #a7a4a2, #585858);
+}
+
+header .menu-de-todos .container-fluid {
+  align-items: center;
+}
+
+header .menu-de-todos .container-fluid .titulo-arriba {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 900;
+  text-align: center;
+}
+
+header .menu-de-todos .container-fluid .titulo-arriba .titulo-principal {
+  font-size: 30px;
+  color: #891519;
+  text-align: center;
+}
+
+header .menu-de-todos .container-fluid .titulo-arriba .titulo-principal1 {
+  color: white;
+}
+
+header .menu-de-todos .container-fluid .menu-bot {
+  border: 4px black dotted;
+  background-color: #891519;
+}
+
+header .menu-de-todos .container-fluid .nav-k {
+  text-align: center;
+  justify-content: flex-end;
+}
+
+/* header .menu-de-todos .container-fluid .nav-k .link .nav-item .active {
+  color: black;
+} */
+
+header .menu-de-todos .container-fluid .nav-k ul li a {
+  position: relative;
+  display: block;
+  margin: 5px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header .menu-de-todos .container-fluid .nav-k ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #579d9c;
+  transition: .5s;
+}
+
+header .menu-de-todos .container-fluid .nav-k ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background: #f9557b;
+  transition: .5s;
+}
+
+header .menu-de-todos .container-fluid .nav-k ul li:hover a {
+  color: #f9c35e !important;
+}
+
+header .menu-de-todos .container-fluid .nav-k ul li:hover a::before {
+  width: 50%;
+  transform: translate(100%);
+}
+
+header .menu-de-todos .container-fluid .nav-k ul li:hover a::after {
+  width: 50%;
+  transform: translate(-100%);
+}
+
+/* -------------------------- FOOTER ---------------------- */
+.antes-de-footer1 {
+  background-color: #ce2026;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+.antes-de-footer1 img {
+  width: 20px;
+}
+
+.antes-de-footer1 .telefono,
+.antes-de-footer1 .hora-simb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.antes-de-footer1 .carta-simb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.antes-de-footer1 .carta-simb a {
+  text-decoration: none;
+  color: white;
+}
+
+.antes-de-footer {
+  background-color: #4c4c4c;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.antes-de-footer .footer1 {
+  padding-top: 50px;
+  display: flex;
+  max-width: 250px;
+  flex-direction: column;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 40px;
+}
+
+.antes-de-footer .footer1 .footer1-experiencia {
+  padding-bottom: 30px;
+}
+
+.antes-de-footer .footer2 {
+  padding-top: 50px;
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 90px;
+  margin-left: 120px;
+}
+
+.antes-de-footer .footer2 .footer2-servicios {
+  padding-bottom: 30px;
+}
+
+.antes-de-footer .footer3 {
+  padding-top: 50px;
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+.antes-de-footer .footer3 .footer3-visitanos {
+  padding-bottom: 30px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.titulo-secundario {
+  background-image: url(https://static.wixstatic.com/media/8a3e6d_0b1e2bf057fa4d78a69db402aa6a7846.jpg/v1/fill/w_1903,h_889,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8a3e6d_0b1e2bf057fa4d78a69db402aa6a7846.jpg);
+  color: white;
+  text-align: center;
+  padding-top: 280px;
+  padding-bottom: 200px;
+}
+
+.titulo-secundario h2 {
+  font-size: 60px;
+  font-weight: 850;
+}
+
+.titulo-secundario h3 {
+  font-size: 50px;
+  font-weight: 650;
+}
+
+.servicios-index {
+  display: flex;
+  justify-content: center;
+  background-color: #ce2026;
+  color: white;
+  align-items: center;
+}
+
+.servicios-index .titulo-mecanica-index {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios-index .titulo-mecanica-index .titulo-mecanica {
+  font-size: 20px;
+}
+
+.titulo-accesorios-index {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.titulo-accesorios-index .titulo-accesorios {
+  font-size: 20px;
+}
+
+.titulo-reparacion-index {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-reparacion-index .titulo-reparacion {
+  font-size: 20px;
+}
+
+.ven-visitanos {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 350px;
+}
+
+.ven-visitanos img {
+  width: 300px;
+  height: 250px;
+  margin: 50px;
+}
+
+.ven-visitanos .visitanos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ven-visitanos .visitanos p {
+  max-width: 300px;
+}
+
+.que-ofrecemos-principal {
+  background-color: #e3e3e3;
+}
+
+.que-ofrecemos-principal .titulo-te-ofrecemos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 120px;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.que-ofrecemos-principal .titulo-te-ofrecemos h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.que-ofrecemos-principal .que-ofrecemos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  align-items: flex-end;
+}
+
+.que-ofrecemos-principal .que-ofrecemos img {
+  width: 50px;
+  height: 50px;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .ubicacion,
+.que-ofrecemos-principal .que-ofrecemos .pesos,
+.que-ofrecemos-principal .que-ofrecemos .estrella {
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .ubicacion .ubicacion-index,
+.que-ofrecemos-principal .que-ofrecemos .pesos .ubicacion-index,
+.que-ofrecemos-principal .que-ofrecemos .estrella .ubicacion-index {
+  width: 100px;
+  height: 80px;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .ubicacion span,
+.que-ofrecemos-principal .que-ofrecemos .pesos span,
+.que-ofrecemos-principal .que-ofrecemos .estrella span {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .ubicacion p,
+.que-ofrecemos-principal .que-ofrecemos .pesos p,
+.que-ofrecemos-principal .que-ofrecemos .estrella p {
+  max-width: 200px;
+  text-align: center;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .pesos span {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .pesos p {
+  max-width: 200px;
+  text-align: center;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .estrella span {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.que-ofrecemos-principal .que-ofrecemos .estrella p {
+  max-width: 200px;
+  text-align: center;
+}
+
+.marcas-calidad {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.marcas-calidad h3 {
+  font-size: 25px;
+}
+
+.marcas-calidad img {
+  padding-top: 40px;
+}
+
+li a {
+  list-style: none;
+}
+
+
+
+/*inicio 768-----------------------------*/
+@media (max-width: 768px) {
+  header .menu-de-todos .container-fluid .titulo-arriba {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  header .menu-de-todos .container-fluid {
+    flex-direction: column;
+  }
+
+  .menu-bot {
+    margin-bottom: 15px;
+  }
+
+  .marcas-calidad img {
+    padding-top: 40px;
+    width: 350px;
+    height: 250px;
+  }
+
+  .titulo-secundario {
+    color: white;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 66px;
+  }
+
+  .titulo-secundario h2 {
+    font-size: 40px;
+    font-weight: 850;
+  }
+
+  .titulo-secundario h3 {
+    font-size: 30px;
+    font-weight: 650;
+  }
+
+  .servicios-index .titulo-mecanica-index .titulo-mecanica {
+    font-size: 15px;
+  }
+
+  .titulo-mecanica-index span {
+    font-size: 13px;
+  }
+
+  .titulo-accesorios-index .titulo-accesorios {
+    font-size: 15px;
+  }
+
+  .titulo-accesorios-index span {
+    font-size: 13px;
+  }
+
+  .titulo-reparacion-index .titulo-reparacion {
+    font-size: 15px;
+  }
+
+  .titulo-reparacion-index span {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .que-ofrecemos-principal .titulo-te-ofrecemos {
+    padding: 80px;
+    margin: 0;
+  }
+
+  .que-ofrecemos-principal .titulo-te-ofrecemos h3 {
+    font-size: 25px;
+    font-weight: 700px;
+    padding-bottom: 15px;
+  }
+
+  .que-ofrecemos-principal .titulo-te-ofrecemos p {
+    font-size: 18px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .ubicacion,
+  .que-ofrecemos-principal .que-ofrecemos .pesos,
+  .que-ofrecemos-principal .que-ofrecemos .estrella {
+    max-width: 600px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .ubicacion p,
+  .que-ofrecemos-principal .que-ofrecemos .pesos p,
+  .que-ofrecemos-principal .que-ofrecemos .estrella p {
+    max-width: 600px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .pesos {
+    max-width: 600px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .pesos p {
+    max-width: 600px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .estrella {
+    max-width: 600px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .estrella p {
+    max-width: 600px;
+  }
+
+  .marcas-calidad {
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 26px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .antes-de-footer1 .telefono,
+  .antes-de-footer1 .hora-simb {
+    padding-right: 0px;
+  }
+
+  .antes-de-footer1 .carta-simb {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .antes-de-footer .footer1 {
+    padding-top: 0px;
+    max-width: 300px;
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+
+  .antes-de-footer .footer2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-left: 40px;
+  }
+}
+
+/*fin 768-----------------------------*/
+/*inicio 425---------------------------------------------------*/
+@media (max-width: 425px) {
+  .servicios-index {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .titulo-accesorios-index {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .servicios-index .titulo-mecanica-index .titulo-mecanica {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .titulo-mecanica-index span {
+    font-size: 15px;
+  }
+
+  .titulo-accesorios-index .titulo-accesorios {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .titulo-accesorios-index span {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .titulo-reparacion-index .titulo-reparacion {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .titulo-reparacion-index span {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .ven-visitanos {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .visitanos {
+    padding-top: 20px;
+  }
+
+  .ven-visitanos img {
+    width: 300px;
+    height: 250px;
+    margin: 0;
+  }
+
+  .que-ofrecemos-principal .titulo-te-ofrecemos {
+    padding: 25px;
+  }
+
+  .que-ofrecemos-principal .titulo-te-ofrecemos h3 {
+    font-size: 20px;
+  }
+
+  .que-ofrecemos-principal .titulo-te-ofrecemos p {
+    font-size: 16px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .ubicacion p,
+  .que-ofrecemos-principal .que-ofrecemos .pesos p,
+  .que-ofrecemos-principal .que-ofrecemos .estrella p {
+    max-width: 350px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .pesos p {
+    max-width: 350px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos .estrella p {
+    max-width: 350px;
+  }
+
+  .que-ofrecemos-principal .que-ofrecemos {
+    padding: 0;
+  }
+
+  .marcas-calidad h3 {
+    font-size: 20px;
+  }
+
+  .marcas-calidad img {
+    width: 200px;
+    height: 180px;
+  }
+
+  .antes-de-footer1 {
+    flex-direction: column;
+  }
+
+  .antes-de-footer1 .telefono,
+  .antes-de-footer1 .hora-simb {
+    text-align: center;
+    padding-bottom: 0px;
+  }
+
+  .antes-de-footer1 .telefono div,
+  .antes-de-footer1 .hora-simb div {
+    margin-bottom: 10px;
+  }
+
+  .antes-de-footer1 .carta-simb {
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .antes-de-footer1 .carta-simb div {
+    margin-bottom: 10px;
+  }
+
+  .antes-de-footer1 .hora-simb {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .antes-de-footer1 .hora-simb div {
+    margin-bottom: 10px;
+  }
+
+  .antes-de-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .antes-de-footer .footer1 .footer1-experiencia {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  .antes-de-footer .footer1 {
+    padding: 15px;
+    max-width: 350px;
+    text-align: center;
+    border-bottom: 1px white solid;
+  }
+
+  .antes-de-footer .footer2 {
+    border-bottom: 1px white solid;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px;
+    max-width: 350px;
+  }
+
+  .antes-de-footer .footer3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+
+  .antes-de-footer .footer3-visitanos {
+    text-align: center;
+  }
+}
+
+/* inicio 320-----------------------*/
+@media (max-width: 320px) {
+  .ven-visitanos img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .marcas-calidad h3 {
+    max-width: 280px;
+  }
+
+  .marcas-calidad img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .antes-de-footer .footer2 {
+    border-bottom: 1px white solid;
+    padding-left: 15px;
+    margin: 0px;
+  }
+}
+
+.nosotros-experiencia {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /*------------------------------GRID------------------ */
+}
+
+.nosotros-experiencia h2 {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.nosotros-experiencia img {
+  width: 350px;
+  height: 300px;
+  padding: 5px;
+}
+
+.nosotros-experiencia .grid-padre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-template-areas: "arriba1 arriba1 arriba1 arriba1"
+    "izquierda1 medio1 medio1 derecha1"
+    "izquierda1 medio1 medio1 derecha1"
+    "abajo1 abajo1 abajo1 abajo1";
+}
+
+.nosotros-experiencia .medio1 {
+  grid-area: medio1;
+}
+
+.nosotros-experiencia .nosotros-parrafo {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 230px;
+}
+
+.nosotros-experiencia .nosotros-parrafo p {
+  padding-bottom: 20px;
+}
+
+.nosotros-experiencia .nosotros-parrafo span {
+  padding-bottom: 20px;
+}
+
+.nosotros-experiencia .nosotros-parrafo a {
+  background-color: #ce2026;
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+  max-width: 150px;
+}
+
+.nosotros-experiencia .arriba1 {
+  grid-area: arriba1;
+  padding-left: 65px;
+}
+
+.nosotros-experiencia .izquierda1 {
+  grid-area: izquierda1;
+  padding-left: 65px;
+}
+
+.nosotros-experiencia .derecha1 {
+  grid-area: derecha1;
+  padding-left: 55px;
+}
+
+.nosotros-experiencia .abajo1 {
+  grid-area: abajo1;
+  padding-left: 65px;
+}
+
+/*--------- MEDIA MQ------------------------------------------------------------------------------*/
+/*-------------- inicio mq 1440 ---------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1440px) {
+  .nosotros-experiencia img {
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+  }
+
+  .nosotros-experiencia .nosotros-parrafo {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 100px;
+  }
+
+  .nosotros-experiencia .derecha1 {
+    padding-left: 0;
+  }
+}
+
+/* ---- FIN MQ 1440 -------------------------------------------------------------------------------------------------------------*/
+/* inicio mq 1024------------------------------------------------ */
+@media (max-width: 1024px) {
+  .nosotros-experiencia img {
+    width: 200px;
+    height: 140px;
+    padding: 1px;
+  }
+
+  .nosotros-experiencia .izquierda1 {
+    padding-left: 15px;
+  }
+
+  .nosotros-experiencia .derecha1 {
+    padding-left: 45px;
+  }
+
+  .nosotros-experiencia .nosotros-parrafo {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    font-size: 15px;
+  }
+
+  .nosotros-experiencia .arriba1 {
+    padding-left: 3px;
+  }
+
+  .nosotros-experiencia .abajo1 {
+    padding-left: 3px;
+  }
+}
+
+/* ---- FIN MQ 1024 -------------------------------------------------------------------------------------------------------------*/
+/*inicio 768 -------------------------------*/
+@media (max-width: 768px) {
+  .nosotros-experiencia .grid-padre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nosotros-experiencia .arriba1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .nosotros-experiencia .arriba1 img {
+    margin: 6px;
+  }
+
+  .nosotros-experiencia .izquierda1 {
+    padding-right: 100px;
+    padding-bottom: 20px;
+  }
+
+  .nosotros-experiencia .izquierda1 img {
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+
+  .nosotros-experiencia .nosotros-parrafo {
+    padding-bottom: 30px;
+  }
+
+  .nosotros-experiencia .derecha1 {
+    padding-right: 100px;
+    padding-bottom: 20px;
+  }
+
+  .nosotros-experiencia .derecha1 img {
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+
+  .nosotros-experiencia .abajo1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .nosotros-experiencia .abajo1 img {
+    margin: 6px;
+  }
+}
+
+/*fin 768----------------------*/
+/* inicio 425 --------------------------*/
+@media (max-width: 425px) {
+  .nosotros-experiencia .arriba1 img {
+    height: 280px;
+    width: 370px;
+    padding: 0;
+    margin: 5px;
+  }
+
+  .nosotros-experiencia .arriba1 {
+    padding-left: 0px;
+  }
+
+  .nosotros-experiencia .izquierda1 img {
+    height: 280px;
+    width: 370px;
+    margin-left: 0px;
+  }
+
+  .nosotros-experiencia .izquierda1 {
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+
+  .nosotros-experiencia .nosotros-parrafo {
+    max-width: 340px;
+  }
+
+  .nosotros-experiencia .derecha1 {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
+
+  .nosotros-experiencia .derecha1 img {
+    height: 280px;
+    width: 370px;
+    margin-left: 0px;
+  }
+
+  .nosotros-experiencia .abajo1 img {
+    height: 280px;
+    width: 370px;
+  }
+}
+
+/*inicio 375-------------------------*/
+@media (max-width: 375px) {
+  .nosotros-experiencia h2 {
+    max-width: 370px;
+  }
+
+  .nosotros-experiencia .arriba1 img {
+    height: 220px;
+    width: 320px;
+  }
+
+  .nosotros-experiencia .izquierda1 {
+    padding-left: 20px;
+  }
+
+  .nosotros-experiencia .izquierda1 img {
+    height: 220px;
+    width: 320px;
+    margin-left: 10px;
+  }
+
+  .nosotros-experiencia .derecha1 img {
+    height: 220px;
+    width: 320px;
+    margin-left: 10px;
+  }
+
+  .nosotros-experiencia .derecha1 {
+    padding-left: 20px;
+  }
+
+  .nosotros-experiencia .abajo1 img {
+    height: 220px;
+    width: 320px;
+    margin-left: 10px;
+  }
+}
+
+/*inicio 320----------------------------*/
+@media (max-width: 320px) {
+  .nosotros-experiencia .arriba1 img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .nosotros-experiencia .izquierda1 img {
+    width: 250px;
+    height: 200px;
+    margin-left: 0px;
+  }
+
+  .nosotros-experiencia .izquierda1 {
+    padding-left: 30px;
+  }
+
+  .nosotros-experiencia .derecha1 img {
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+  }
+
+  .nosotros-experiencia .abajo1 img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .nosotros-experiencia .nosotros-parrafo p {
+    max-width: 280px;
+  }
+
+  .nosotros-experiencia .nosotros-parrafo span {
+    max-width: 280px;
+  }
+
+  .nosotros-experiencia .abajo1 img {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* --------------------------- page servicios-------------------- */
+.que-servicios-necesitas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.que-servicios-necesitas p {
+  max-width: 800px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.servicios-completos img {
+  height: 60px;
+  width: 60px;
+}
+
+.servicios-completos .parte1,
+.servicios-completos .parte2 {
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: space-evenly;
+}
+
+.servicios-completos .parte1 p,
+.servicios-completos .parte2 p {
+  max-width: 300px;
+}
+
+.servicios-completos .parte1 .martillo-llave,
+.servicios-completos .parte2 .martillo-llave,
+.servicios-completos .parte1 .revision-simb,
+.servicios-completos .parte2 .revision-simb,
+.servicios-completos .parte1 .aceite-simb,
+.servicios-completos .parte2 .aceite-simb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ce2026;
+}
+
+.servicios-completos .parte2 p {
+  max-width: 300px;
+}
+
+.servicios-completos .parte2 .remolque,
+.servicios-completos .parte2 .neumaticos,
+.servicios-completos .parte2 .bateria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ce2026;
+}
+
+.contactanos {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contactanos a {
+  text-decoration: none;
+  color: white;
+  background-color: #ce2026;
+  padding: 10px;
+}
+
+/*inicio 768-------------------------*/
+@media (max-width: 768px) {
+  .servicios-completos img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .que-servicios-necesitas {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .que-servicios-necesitas p {
+    max-width: 580px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .servicios-completos .parte1,
+  .servicios-completos .parte2 {
+    text-align: center;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicios-completos .parte1 p,
+  .servicios-completos .parte2 p {
+    margin-top: 10px;
+    max-width: 580px;
+  }
+
+  .servicios-completos .parte2 {
+    text-align: center;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .servicios-completos .parte2 p {
+    margin-top: 10px;
+    max-width: 580px;
+  }
+}
+
+/* inicio 425----------------------------*/
+@media (max-width: 425px) {
+  .que-servicios-necesitas p {
+    max-width: 380px;
+  }
+
+  .servicios-completos .parte1 p,
+  .servicios-completos .parte2 p {
+    max-width: 380px;
+  }
+
+  .servicios-completos .parte2 p {
+    max-width: 380px;
+  }
+}
+
+/* inicio 320 ------------------------------ */
+@media (max-width: 320px) {
+  h2 {
+    text-align: center;
+  }
+
+  .servicios-completos .parte1 p,
+  .servicios-completos .parte2 p {
+    max-width: 280px;
+  }
+
+  .servicios-completos .parte2 p {
+    max-width: 280px;
+  }
+}
+
+/* -----------------------------------------page seguros------------------------------- */
+.titulo-seguros {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.parte3,
+.parte4 {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.parte4 {
+  padding-bottom: 100px;
+}
+
+/*-------- MEDIA MQ -------------------------------------------------------------*/
+/*-------------- inicio mq 1440 ---------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1440px) {
+
+  .parte3 img,
+  .parte4 img {
+    width: 190px;
+    height: 115px;
+  }
+
+  .parte4 img {
+    width: 190px;
+    height: 115px;
+  }
+}
+
+/* ---- FIN MQ 1440 -------------------------------------------------------------------------------------------------------------*/
+/*inicio 1024----------------------*/
+@media (max-width: 1024px) {
+
+  .parte3 img,
+  .parte4 img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .parte4 img {
+    width: 150px;
+    height: 100px;
+  }
+
+  /* HEADER ------------------------------------------ */
+  .link a {
+    font-size: 14px;
+  }
+
+  .titulo-arriba span {
+    font-size: 18px;
+  }
+
+  header img {
+    height: 130px;
+    width: 180px;
+  }
+}
+
+/*fin 1024-----------------------*/
+/*inicio 768 -------------*/
+@media (max-width: 768px) {
+
+  .parte3,
+  .parte4 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .parte3 img,
+  .parte4 img {
+    width: 200px;
+    height: 170px;
+  }
+
+  .parte4 {
+    align-items: center;
+    padding-bottom: 30px;
+    flex-direction: row;
+  }
+
+  .parte4 img {
+    width: 200px;
+    height: 170px;
+  }
+}
+
+/* inicio 375----------------------------*/
+@media (max-width: 375px) {
+  .titulo-seguros {
+    max-width: 360px;
+  }
+
+  .parte3 img,
+  .parte4 img {
+    width: 200px;
+    height: 170px;
+  }
+
+  .parte4 img {
+    width: 200px;
+    height: 170px;
+  }
+}
+
+.titulo-contacto {
+  text-align: center;
+  padding-top: 120px;
+  text-decoration: underline #585858;
+}
+
+.formulario {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 80px;
+}
+
+.formulario .info {
+  flex-direction: column;
+  padding: 50px;
+  border: 10px outset #3d1414;
+}
+
+.formulario .form {
+  display: flex;
+  padding: 50px;
+  border: 10px #3d1414 outset;
+}
+
+.formulario .form .caja-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario .form input {
+  box-shadow: inset 0 0 10px #891519;
+}
+
+.formulario .form textarea {
+  box-shadow: inset 0 0 10px #891519;
+}
+
+.formulario .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario .form form .boton-envi {
+  background-color: #ce2026;
+  color: white;
+  font-size: 14px;
+  padding: 10px 50px 10px 50px;
+  margin-top: 10px;
+}
+
+.maps {
+  text-align: center;
+  background-color: #d4d0d0;
+}
+
+.maps .mapa {
+  max-width: 100%;
+}
+
+/*-------------- inicio mq 1440 ---------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1440px) {
+  .maps .mapa {
+    height: 400px;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+}
+
+/* ---- FIN MQ 1440 -------------------------------------------------------------------------------------------------------------*/
+/*inicio 768--------------*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .formulario .info {
+    padding: 10px;
+    border: 10px dotted #3d1414;
+    margin-bottom: 80px;
+  }
+
+  .formulario .form {
+    padding: 10px;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+
+  .maps .mapa {
+    height: 400px;
+    width: 80%;
+    padding-bottom: 40px;
+  }
+}
+
+/* inicio 320 --------------------*/
+@media (max-width: 320px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .formulario .info {
+    padding: 10px;
+    border: 5px dotted #3d1414;
+    display: flex;
+  }
+
+  .formulario .form {
+    border: 5px #3d1414 dashed;
+  }
+}
+
+.active {
+  color: black!important;
+}
